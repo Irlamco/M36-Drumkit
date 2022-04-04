@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Virtual Drumkit</title>
 </head>
 <body>
     <section class = "header">
         <h1 id="title">Virtual Drumkit</h1>
         <h2 id="instructions">Press the corresponding keys or the buttons on screen.</h2>
+    </section>
+    <section class = "pressedDisplay">
+        <h1 id="displayPressedKey">...</h1>
     </section>
     <section class = "drum-container">
         <button id="boom">
@@ -19,7 +23,7 @@
         </button>
         <button id="clap">
             <h1>B</h1>
-            <h2>Clap</h2>       
+            <h2>Clap</h2>   
             <audio id ="clapAudio" src="" autoplay="false"></audio>    
         </button>
         <button id="hihat">
@@ -57,6 +61,9 @@
             <h2>Tom</h2>   
             <audio id ="tomAudio" src="" autoplay="false"></audio> 
         </button>
+    </section>
+    <section id="footer">
+        <p>Drum kit created my Jordan Irlam</p>
     </section>
     <script src="app.js"></script>
 </body>
