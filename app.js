@@ -1,3 +1,7 @@
+const displayPressedKey = document.getElementById("displayPressedKey")
+const h1 = document.querySelector("h2");
+
+
 // Button IDs
 const boom = document.getElementById("boom");
 const clap = document.getElementById("clap");
@@ -20,14 +24,109 @@ const snareAudio = document.getElementById("snareAudio");
 const tinkAudio = document.getElementById("tinkAudio");
 const tomAudio = document.getElementById("tomAudio");
 
-// Keypress
+//boom
 document.addEventListener("keypress", (event) => {
 	if (event.key == "a") {
-        console.log(event.key)
+        boomAudio.src = "sounds/boom.wav";
+        displayPressedKey.innerHTML = "Boom";
+    }});
+
+boom.addEventListener("click", () => {
+        boomAudio.src = "sounds/boom.wav";
+        displayPressedKey.innerHTML = "Boom";
+    });
+
+//clap
+document.addEventListener("keypress", (event) => {
+	if (event.key == "b") {
         clapAudio.src = "sounds/clap.wav";
+        displayPressedKey.innerHTML = "Clap";
     }});
 
 clap.addEventListener("click", () => {
-        console.log("clicked")
         clapAudio.src = "sounds/clap.wav";
+        displayPressedKey.innerHTML = "Clap";
     });
+
+//hihat
+document.addEventListener("keypress", (event) => {
+	if (event.key == "c") {
+        hihatAudio.src = "sounds/hihat.wav";
+        displayPressedKey.innerHTML = "Hihat";
+    }});
+
+hihat.addEventListener("click", () => {
+        hihatAudio.src = "sounds/hihat.wav";
+        displayPressedKey.innerHTML = "Hihat";
+    });
+
+//kick
+document.addEventListener("keypress", (event) => {
+	if (event.key == "d") {
+        kickAudio.src = "sounds/kick.wav";
+        displayPressedKey.innerHTML = "Kick";
+    }});
+
+kick.addEventListener("click", () => {
+        kickAudio.src = "sounds/kick.wav";
+        displayPressedKey.innerHTML = "Kick";
+    });  
+
+//Openhat
+document.addEventListener("keypress", (event) => {
+    if (event.key == "e") {
+        openhatAudio.src = "sounds/openhat.wav";
+        displayPressedKey.innerHTML = "Openhat";
+    }});
+
+openhat.addEventListener("click", () => {
+        openhatAudio.src = "sounds/openhat.wav";
+        displayPressedKey.innerHTML = "Openhat";
+    });    
+
+//Ride
+document.addEventListener("keypress", (event) => {
+    if (event.key == "f") {
+        rideAudio.src = "sounds/ride.wav";
+        displayPressedKey.innerHTML = "Ride";
+    }});
+
+ride.addEventListener("click", () => {
+        rideAudio.src = "sounds/ride.wav";
+        displayPressedKey.innerHTML = "Ride";
+    });    
+
+//Snare
+document.addEventListener("keypress", (event) => {
+    if (event.key == "g") {
+        snareAudio.src = "sounds/snare.wav";
+        displayPressedKey.innerHTML = "Snare";
+    }});
+
+    snare.addEventListener("click", () => {
+        snareAudio.src = "sounds/snare.wav";
+        displayPressedKey.innerHTML = "Snare";
+    }); 
+//Tink
+document.addEventListener("keypress", (event) => {
+    if (event.key == "h") {
+        tinkAudio.src = "sounds/tink.wav";
+        displayPressedKey.innerHTML = "Tink";
+    }});
+
+    tink.addEventListener("click", () => {
+        tinkAudio.src = "sounds/tink.wav";
+        displayPressedKey.innerHTML = "Tink";
+    });
+//Tom
+document.addEventListener("keypress", (event) => {
+    if (event.key == "i") {
+        tomAudio.src = "sounds/tom.wav";
+        displayPressedKey.innerHTML = "Tom";
+    }});
+
+    tom.addEventListener("click", () => {
+        tomAudio.src = "sounds/tom.wav";
+        displayPressedKey.innerHTML = "Tom";
+    });
+
