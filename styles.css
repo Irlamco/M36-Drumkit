@@ -1,0 +1,36 @@
+html, body {
+margin: 0;
+padding: 0;
+display: flex;
+flex-flow: column;
+align-items: center;
+justify-content: center;
+background: linear-gradient(to bottom,rgba(121,255,247,1) 0%, rgba(220,129,255,1) 100%);
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height: 100%;
+}
+.drum-container {
+display: flex;
+flex-flow: row wrap;
+width: 600px;
+height: 600px;
+margin: auto;
+align-items: center;
+justify-content: center;
+}
+
+.drum-container button {
+border-radius: 35px;
+border-style: none;
+box-shadow: 6px 7px 15px 5px rgba(0,0,0,0.65);
+width: 25%;
+margin: 10px;
+height: 25%;
+}
+.drum-container button:active {
+transform: scale(1.2);
+transition: 0s;
+}
+
